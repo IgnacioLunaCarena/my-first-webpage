@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #201e36;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #030017;
+    font-family: "Kanit", serif;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    background-color: #2f2c4f;
+    width: 65%;
+    font-family: "Signika Negative", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+p {
+    font-family: "Quicksand", serif;
+}
+
+.index-banner {
+    background-color: #818181;
+    width: 100%;
+    height: 50vh;
+}
+
+.index-category-nav {
+    background-color: #030017;
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.index-category-conteiner {
+    background-color: #2f2c4f; 
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-category-title {
+    padding: 40px 20px 20px 20px;
+}
+
+article {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.article-mod {
+    padding: 5px 5px 5px 0px;
+}
+
+article div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+article img {
+    background-color: #818181;
+    height: 20vh;
+    width: 100%;
+}
+
+.index-category-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+/* FOOTER STYLE */
+
+footer {
+    background-color: #030017;
+    font-family: "Signika Negative", serif;
+    width: 100%;
+    height: 10vh;
+}
+
+
+
