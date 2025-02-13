@@ -1,2 +1,2 @@
 # my-first-webpage
- Project for Web Developmet couse on CODERHOUSE
+ Project for Web Developmet course on CODERHOUSE
