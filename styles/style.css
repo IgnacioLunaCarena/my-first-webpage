@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* GENERAL STYLE*/
+
 body {
     background-color: #201e36;
     color: #b3b3b3;
@@ -38,15 +40,29 @@ footer {
     font-family: "Signika Negative", serif;
     width: 100%;
     height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-ul {
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
     display: flex;
 }
 
 li {
     list-style: none;
-    padding: 10px;
+}
+
+footer p {
+    font-weight: bold;
 }
 
 a {
@@ -62,6 +78,9 @@ a:hover {
 p {
     font-family: "Quicksand", serif;
 }
+
+
+/* SPECIFIC STYLE*/
 
 .index-banner {
     background-color: #818181;
@@ -121,6 +140,59 @@ article img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
+}
+
+.grid-conteiner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 3fr 4fr;
+    grid-template-areas: 
+    "search search search search search"
+    "aside video video video video"
+    "aside play play achiev achiev"
+    ;
+}
+
+.search {
+    grid-area: search;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search h2, .search form {
+    margin: 0px 40px;
+    padding: 0px 40px;
+}
+
+.aside {
+    grid-area: aside;
+    width: 100%;
+    height: 100%;
+}
+
+.aside-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.video {
+    grid-area: video;
+    background-color: #818181;
+    width: 100%;
+    height: 100%;
+}
+
+.game-play {
+    grid-area: play;
+}
+
+.game-achievement {
+    grid-area: achiev;
 }
 
 
