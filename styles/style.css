@@ -243,16 +243,9 @@ article img {
     padding: 20px;
 }
 
-.left-border {
-    border-left: solid black 1px;
-}
-
-.low-margin {
-    margin-bottom: 40px;
-}
-
 .acerca_de-section {
     background-color: #2D2E2E;
+    padding: 20px;
     border: solid black 1px;
     display: flex;
     flex-direction: row;
@@ -288,4 +281,55 @@ article img {
     background-color: #818181;
     width: 150px;
     height: 150px;
+}
+
+.contacto-section {
+    padding: 40px;
+    background-color: #2D2E2E;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-mail {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contacto-mail label {
+    width: 100px;
+}
+
+.contacto-mail input {
+    width: 250px;
+}
+
+.contacto-message {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contacto-message label {
+    width: 100px;
+}
+
+.contacto-message textarea {
+    width: 250px;
+    height: 100px;
+}
+
+.margin-left {
+    margin-left: 100px;
+}
+
+.left-border {
+    border-left: solid black 1px;
+}
+
+.low-margin {
+    margin-bottom: 40px;
 }

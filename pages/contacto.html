@@ -33,16 +33,22 @@
         </div>
     </header>
     <main>
-        <h2>CONTACTO</h2>
-        <section class="highlight">
-            <form action="/submit" method="post">
-                <label for="correoDeContacto">Correo: </label>
-                <input type="text" name="correo" id="correoDeContacto">
-                <label for="mensajeDeContacto">Mensaje: </label>
-                <textarea name="mensaje" id="mensajeDeContacto"></textarea>
-                <input type="submit" value="ENVIAR">
-            </form>
-        </section>
+        <div class="flex-conteiner">
+            <h2>CONTACTO</h2>
+            <section class="contacto-section low-margin">
+                <form action="#" method="post">
+                    <div class="contacto-mail">
+                        <label for="correoDeContacto">Correo: </label>
+                        <input type="text" name="correo" id="correoDeContacto">
+                    </div>
+                    <div class="contacto-message">
+                        <label for="mensajeDeContacto">Mensaje: </label>
+                        <textarea name="mensaje" id="mensajeDeContacto"></textarea>
+                    </div>
+                    <input class="margin-left" type="submit" value="ENVIAR">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>@Copyright text</p>
