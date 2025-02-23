@@ -6,8 +6,21 @@
 
 /* GENERAL STYLE*/
 
+/* Paleta de colores
+ORIGINAL
+OSCURO: #030017
+MEDIO:#201e36
+CLARO:#2f2c4f
+
+NUEVA
+OSCURO: #0F0F0F
+MEDIO: #2D2E2E
+CLARO: #1E1F1F
+
+*/
+
 body {
-    background-color: #201e36;
+    background-color: #2D2E2E;
     color: #b3b3b3;
     display: flex;
     flex-direction: column;
@@ -16,7 +29,7 @@ body {
 }
 
 header {
-    background-color: #030017;
+    background-color: #0F0F0F;
     font-family: "Kanit", serif;
     width: 100%;
     height: 10vh;
@@ -26,7 +39,7 @@ header {
 }
 
 main {
-    background-color: #2f2c4f;
+    background-color: #1E1F1F;
     width: 65%;
     font-family: "Signika Negative", serif;
     display: flex;
@@ -36,7 +49,7 @@ main {
 }
 
 footer {
-    background-color: #030017;
+    background-color: #0F0F0F;
     font-family: "Signika Negative", serif;
     width: 100%;
     height: 10vh;
@@ -75,7 +88,7 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
+p, span{
     font-family: "Quicksand", serif;
 }
 
@@ -88,30 +101,37 @@ p {
     height: 50vh;
 }
 
+.index-banner-img {
+    width: 100%;
+    height: 50vh;
+}
+
 .index-category-nav {
-    background-color: #030017;
+    padding: 20px 0px;
     display: flex;
     height: auto;
     width: 100%;
-    justify-content: space-evenly; 
+    justify-content: center; 
     align-items: center;
 }
 
 .index-category-conteiner {
-    background-color: #2f2c4f; 
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.index-category-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.index-category-title {
-    padding: 40px 20px 20px 20px;
-}
-
-article {
-    width: 80%;
+.index-article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +142,7 @@ article {
     padding: 5px 5px 5px 0px;
 }
 
-article div {
+.asdarticle div {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -133,13 +153,6 @@ article img {
     background-color: #818181;
     height: 20vh;
     width: 100%;
-}
-
-.index-category-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
 }
 
 .grid-conteiner {
@@ -194,6 +207,45 @@ article img {
 .game-achievement {
     grid-area: achiev;
 }
+
+.comunidad-conteiner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comunidad-conteiner h2 {
+    width: 100%;
+    padding: 20px;
+}
+
+.comunidad-conteiner section {
+    width: 100%;
+}
+
+.comunidad-article {
+    margin: 5px;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comunidad-article div a {
+    margin: 0px;
+}
+
+.comunidad-article span, .comunidad-article div {
+    padding: 20px;
+}
+
+.left-border {
+    border-left: solid black 1px;
+}
+
 
 
 
