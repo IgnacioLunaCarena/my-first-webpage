@@ -38,6 +38,14 @@ header {
     align-items: center;
 }
 
+header ul, footer ul {
+    display: flex;
+}
+
+header a {
+    margin: 0px 10px;
+}
+
 main {
     background-color: #1E1F1F;
     width: 65%;
@@ -66,10 +74,6 @@ header div {
     align-items: center;
 }
 
-ul{
-    display: flex;
-}
-
 li {
     list-style: none;
 }
@@ -81,7 +85,6 @@ footer p {
 a {
     text-decoration: none;
     color: #b3b3b3;
-    margin: 0px 10px;
 }
 
 a:hover {
@@ -123,6 +126,7 @@ p, span{
     align-items: center;
 
 }
+
 .index-category-flex {
     display: flex;
     flex-direction: row;
@@ -158,54 +162,100 @@ article img {
 .grid-conteiner {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 0.3fr 3fr 4fr;
+    grid-template-rows: 400px 50vh;
     grid-template-areas: 
-    "search search search search search"
     "aside video video video video"
-    "aside play play achiev achiev"
-    ;
-}
-
-.search {
-    grid-area: search;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.search h2, .search form {
-    margin: 0px 40px;
-    padding: 0px 40px;
+    "aside play play achiev achiev";
+    gap: 10px;
 }
 
 .aside {
     grid-area: aside;
-    width: 100%;
-    height: 100%;
-}
-
-.aside-flex {
-    width: 100%;
-    height: 100%;
+    background-color: #2D2E2E;
+    border: solid black 1px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
+}
+
+.aside ul {
+    width: 70%;
+}
+
+.aside li {
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border-bottom: solid black 1px;
+    text-align: center;
 }
 
 .video {
     grid-area: video;
-    background-color: #818181;
+    background-color: #2D2E2E;
+    border: solid black 1px;
+}
+
+.video video {
     width: 100%;
     height: 100%;
 }
 
 .game-play {
     grid-area: play;
+    padding: 25px;
+    background-color: #2D2E2E;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-play h3 {
+    height: 10%;
+}
+
+.game-play p {
+    height: 80%;
+    text-indent: 30px;
+}
+
+.game-play a {
+    height: 10%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #1E1F1F;
+    border: solid black 1px;
+}
+
+.game-play a:hover {
+    background-color: #0F0F0F;
+    text-decoration: none;
 }
 
 .game-achievement {
     grid-area: achiev;
+    padding: 25px;
+    background-color: #2D2E2E;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-achievement h3 {
+    height: 10%;
+}
+
+.game-achievement div {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.game-achievement div img {
+    width: 60px;
+    height: 60px;
 }
 
 .flex-conteiner {
@@ -235,10 +285,6 @@ article img {
     align-items: center;
 }
 
-.comunidad-article div a {
-    margin: 0px;
-}
-
 .comunidad-article span, .comunidad-article div {
     padding: 20px;
 }
@@ -266,7 +312,8 @@ article img {
 }
 
 .acerca_de-section-description p {
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
+    text-indent: 30px;
 }
 
 .acerca_de-section-images {
@@ -320,6 +367,21 @@ article img {
 .contacto-message textarea {
     width: 250px;
     height: 100px;
+}
+
+.contacto-section a {
+    width: 250px;
+    height: 30px;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #1E1F1F;
+    border: solid black 1px; 
+}
+
+.contacto-section a:hover {
+    background-color: #0F0F0F;
+    text-decoration: none;
 }
 
 .margin-left {
