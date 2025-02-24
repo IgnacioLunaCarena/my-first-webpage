@@ -48,11 +48,7 @@ main {
     align-items: center;
 }
 
-@media (min-width: 1024px) {
-    main {
-        width: 65%;
-    }
-}
+
 
 footer {
     background-color: #0F0F0F;
@@ -446,4 +442,12 @@ article img {
 
 .low-margin {
     margin-bottom: 40px;
+}
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    main {
+        width: 65%;
+    }
 }
