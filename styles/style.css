@@ -4,20 +4,12 @@
     box-sizing: border-box;
 }
 
-/* GENERAL STYLE*/
-
 /* Paleta de colores
-ORIGINAL
-OSCURO: #030017
-MEDIO:#201e36
-CLARO:#2f2c4f
-
-NUEVA
 OSCURO: #0F0F0F
 MEDIO: #1E1F1F
-CLARO: #2D2E2E
+CLARO: #2D2E2E */
 
-*/
+/* GENERAL STYLE*/
 
 body {
     background-color: #2D2E2E;
@@ -48,12 +40,18 @@ header a {
 
 main {
     background-color: #1E1F1F;
-    width: 65%;
+    width: 100%;
     font-family: "Signika Negative", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 65%;
+    }
 }
 
 footer {
@@ -95,8 +93,24 @@ p, span{
     font-family: "Quicksand", serif;
 }
 
+.flex-conteiner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-/* SPECIFIC STYLE*/
+.flex-conteiner h2 {
+    width: 100%;
+    padding: 20px;
+}
+
+.flex-conteiner section {
+    width: 100%;
+}
+
+/* INDEX STYLE */
 
 .index-banner {
     background-color: #818181;
@@ -109,22 +123,36 @@ p, span{
     height: 50vh;
 }
 
-.index-category-nav {
-    padding: 20px 0px;
+.index-category-select {
     display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-.index-category-conteiner {
+.index-category-select form {
+    padding: 10px;
+}
+
+.index-category-select ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.index-category-select li {
+    padding: 10px;
+}
+
+.index-category-gamelist {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.index-category-gamelist h2 {
+    padding: 10px;
 }
 
 .index-category-flex {
@@ -136,33 +164,66 @@ p, span{
 }
 
 .index-article {
+    margin: 15px;
+    width: 200px;
+    height: auto;
+    background-color: #2D2E2E;
+    border: solid black 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
-.article-mod {
-    padding: 5px 5px 5px 0px;
-}
-
-.asdarticle div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
 article img {
     background-color: #818181;
-    height: 20vh;
+    height: 200px;
     width: 100%;
 }
+
+.index-article h3 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-bottom: solid black 1px;
+}
+
+.index-article p {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-bottom:solid black 1px;
+}
+
+.index-article div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-article a {
+    padding: 5px;
+    border-right: solid black 1px;
+}
+
+.index-article a:hover {
+    background-color: #0F0F0F;
+    text-decoration: none;
+}
+
+.index-article span {
+    width: 100%;
+    text-align: center;
+}
+
+/* BIBLIOTECA STYLE */
 
 .grid-conteiner {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 400px 50vh;
+    grid-template-rows: 400px auto;
     grid-template-areas: 
     "aside video video video video"
     "aside play play achiev achiev";
@@ -258,22 +319,7 @@ article img {
     height: 60px;
 }
 
-.flex-conteiner {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-conteiner h2 {
-    width: 100%;
-    padding: 20px;
-}
-
-.flex-conteiner section {
-    width: 100%;
-}
+/* COMUNIDAD STYLE */
 
 .comunidad-article {
     margin: 5px;
@@ -288,6 +334,8 @@ article img {
 .comunidad-article span, .comunidad-article div {
     padding: 20px;
 }
+
+/* ACERCA DE STYLE */
 
 .acerca_de-section {
     background-color: #2D2E2E;
@@ -329,6 +377,8 @@ article img {
     width: 150px;
     height: 150px;
 }
+
+/* CONTACTO STYLE */
 
 .contacto-section {
     padding: 40px;
@@ -383,6 +433,8 @@ article img {
     background-color: #0F0F0F;
     text-decoration: none;
 }
+
+/* SPECIFIC STYLE */
 
 .margin-left {
     margin-left: 100px;
