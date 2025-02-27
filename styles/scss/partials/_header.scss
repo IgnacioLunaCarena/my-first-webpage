@@ -1,0 +1,26 @@
+header {
+    font-family: $heaFootFont;
+    background-color: $lightColor;
+    padding: 2rem;
+    gap: 1rem;
+    @include flexRow(space-around, center);
+    nav {
+        display: none;
+        ul {
+            gap: 1rem;
+            @include flexRow (center, center);
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    div {
+        @include flexColumn (center, center);
+    }
+}
