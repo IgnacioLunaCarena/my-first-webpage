@@ -1,11 +1,45 @@
-@mixin flexRow ($justify, $aling) {
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexRowJ ($justify) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+}
+
+@mixin flexColumnJ ($justify) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+}
+
+@mixin flexRowA ($aling) {
+    display: flex;
+    flex-direction: row;
+    align-items: $aling;
+}
+
+@mixin flexColumnA ($aling) {
+    display: flex;
+    flex-direction: column;
+    align-items: $aling;
+}
+
+@mixin flexRowJA ($justify, $aling) {
     display: flex;
     flex-direction: row;
     justify-content: $justify;
     align-items: $aling;
 }
 
-@mixin flexColumn ($justify, $aling) {
+@mixin flexColumnJA ($justify, $aling) {
     display: flex;
     flex-direction: column;
     justify-self: $justify;

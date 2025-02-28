@@ -1,14 +1,18 @@
 header {
-    font-family: $heaFootFont;
-    background-color: $lightColor;
+    font-family: $headFootFont;
+    background-color: $darkColor;
     padding: 2rem;
-    gap: 1rem;
-    @include flexRow(space-around, center);
-    nav {
+    @include flexRowJA(space-around, center);
+    .open-menu {
         display: none;
+    }
+    nav {
+        .close-menu {
+            display: none;
+        }
         ul {
+            @include flexRowJA (center, center);
             gap: 1rem;
-            @include flexRow (center, center);
             li {
                 list-style-type: none;
                 a {
@@ -21,6 +25,6 @@ header {
         }
     }
     div {
-        @include flexColumn (center, center);
+        @include flexColumnJA (center, center);
     }
 }
