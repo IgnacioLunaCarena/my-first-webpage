@@ -2,29 +2,32 @@ header {
     font-family: $headFootFont;
     background-color: $darkColor;
     padding: 2rem;
-    @include flexRowJA(space-around, center);
+    @include flexRowJA(space-between, center);
     .open-menu {
         display: none;
     }
     nav {
+        width: auto;
+        @include flexRowJA (space-between, center);
         .close-menu {
             display: none;
         }
         ul {
-            @include flexRowJA (center, center);
+            @include flexRowJA (space-between, center);
             gap: 1rem;
             li {
                 list-style-type: none;
-                a {
-                    text-decoration: none;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
+                
             }
         }
+        div {
+            @include flexColumnJA (center, center);
+        }
     }
-    div {
-        @include flexColumnJA (center, center);
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
