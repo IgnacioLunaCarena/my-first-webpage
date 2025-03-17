@@ -1,33 +1,24 @@
 header {
-    font-family: $headFootFont;
     background-color: $darkColor;
-    padding: 2rem;
-    @include flexRowJA(space-between, center);
+    font-family: $headerFont;
+    width: 100%;
+    height: 10vh;
+    min-height: 55px;
+    @include flexRowJA(space-around, center);
     .open-menu {
         display: none;
     }
     nav {
-        width: auto;
-        @include flexRowJA (space-between, center);
+        @include flexRowJA (space-around, center);
         .close-menu {
             display: none;
         }
         ul {
             @include flexRowJA (space-between, center);
             gap: 1rem;
-            li {
-                list-style-type: none;
-                
-            }
         }
         div {
             @include flexColumnJA (center, center);
         }
-    }
-    a {
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
     }
 }

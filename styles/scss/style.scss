@@ -1,6 +1,12 @@
 @import './partials/variables';
 @import './partials/mixin';
 @import './partials/reset';
+@import './partials/base-style';
 @import './partials/header';
+@import './partials/main/index-main';
+@import './partials/main/comunidad-main';
+@import './partials/main/acerca-de-main';
+@import './partials/main/contacto-main';
+@import './partials/footer';
 @import './partials/media-querie';
 

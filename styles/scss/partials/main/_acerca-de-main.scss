@@ -1,0 +1,28 @@
+.acerca_de {
+    padding: 2rem;
+    gap: 2rem;
+    h2 {
+        width: 100%;
+    }
+    section {
+        padding: 1rem;
+        border: solid black 1px;
+        background-color: $lightColor;
+        @include flexRow;
+        .acerca_de-text {
+            margin: 1rem 2rem 1rem 1rem;
+        }
+        .acerca_de-img {
+            padding: 0rem 1rem 0rem 2rem;
+            margin: 1rem 0rem 1rem 0rem;
+            border-left: solid black 1px;
+            @include flexColumnJA (space-around, center);
+            img {
+                width: 200px;
+                height: 200px;
+                margin: 1rem;
+                background-color: $fontColor;
+            }
+        }
+    }
+}

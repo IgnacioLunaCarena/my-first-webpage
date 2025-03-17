@@ -1,0 +1,30 @@
+body {
+    background-color: $lightColor;
+    @include flexColumnA (center);
+}
+
+main, footer {
+    font-family: $generalFont;
+}
+
+main {
+    background-color: $mediumColor;
+    width: 60%;
+    height: auto;
+    @include flexColumnJA (center, center);
+}
+
+p span {
+    font-family: $pSpanFont;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+.comunidad {
+    padding: 2rem;
+    gap: 2rem;
+    h2 {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        gap: 1rem;
+        @include flexColumn;
+        article {
+            background-color: $lightColor;
+            border: solid black 1px;
+            @include flexRowJA (space-between, center);
+            div {
+                padding: 0rem 1rem 0rem 0rem;
+                margin: 1rem 0rem 1rem 1rem;
+                border-right: solid black 1px;
+                @include flexColumnJA (center, start);
+            }
+            span {
+                height: auto;
+                padding: 1rem;
+            }
+        }
+    }
+}

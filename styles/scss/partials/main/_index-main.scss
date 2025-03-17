@@ -1,0 +1,83 @@
+.index-banner {
+    width: 100%;
+    .index-banner-img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.index-category-select {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    @include flexRowJA (center, center);
+    ul {
+        gap: 2rem;
+        @include flexRowA (center);
+    }
+}
+
+.index-gamelist {
+    width: 100%;
+    height: auto;
+    @include flexColumnA (center);
+    .index-article-conteiner {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        @include flexRowJA (center, center);
+        flex-wrap: wrap;
+        .index-article {
+            margin: 1rem;
+            @include flexColumnJA (center, start);
+            width: 180px;
+            height: auto;
+            background-color: $lightColor;
+            img {
+                width: 180px;
+                height: 150px;
+                background-color: $fontColor;
+            }
+            h3 {
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                border-left: solid black 2px;
+                border-right: solid black 2px;
+                border-bottom: solid black 1px;
+            }
+            p {
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                border-left: solid black 2px;
+                border-right: solid black 2px;
+                border-bottom: solid black 1px;
+            }
+            div {
+                width: 100%;
+                height: auto;
+                border-left: solid black 2px;
+                border-right: solid black 2px;
+                border-bottom: solid black 2px;
+                @include flexRowJA (center, center);
+                a {
+                    width: 50%;
+                    height: auto;
+                    padding: 5px;
+                }
+                a:hover {
+                    text-decoration: none;
+                    background-color: $darkColor;
+                }
+                span {
+                    width: 50%;
+                    height: auto;
+                    text-align: center;
+                    padding: 5px;
+                    border-left: solid black 1px;
+                }
+            }
+        }
+    }
+}

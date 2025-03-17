@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reveck's | Gaming Store</title>
     <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
@@ -12,50 +13,49 @@
 <body>
     <header>
         <h1>Reveck's</h1>
-        <nav>
+        <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
+        <nav id="nav">
+            <button id="close" class="close-menu"><i class="bi bi-x-lg"></i></button>
             <ul>
-                <li><a href=../index.html>Tienda</a></li>
+                <li><a href="../index.html">Tienda</a></li>
                 <li><a href="biblioteca.html">Biblioteca</a></li>
                 <li><a href="comunidad.html">Comunidad</a></li>
                 <li><a href=#>Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div>
+                <a href=#>inicio sesion</a>
+                <form action="" method="">
+                    <select name="" id="">
+                        <option value="">Español</option>
+                        <option value="">Ingles</option>
+                    </select>
+                </form>
+            </div>
         </nav>
-        <div>
-            <a href=#>inicio sesion</a>
-            <form action="" method="">
-                <select name="" id="">
-                    <option value="">Español</option>
-                    <option value="">Ingles</option>
-                </select>
-            </form>
-        </div>
     </header>
-    <main>
-        <div class="flex-conteiner">
-            <h2>ACERCA DE</h2>
-            <section class="acerca_de-section low-margin">
-                <div class="acerca_de-section-description">
-                    <h3>NUESTRA HISTORIA</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus non quam ad sit impedit voluptates harum, numquam dolore est quidem, nam iure qui molestias! Molestiae vero sed eum harum earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque eligendi hic vel voluptate adipisci, omnis voluptas possimus unde molestiae sapiente natus, quam rem assumenda? Tenetur ab ipsa molestiae laudantium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ullam reiciendis veniam aspernatur eius minus aliquam saepe quam tenetur molestias eaque aut, velit mollitia quidem, itaque pariatur libero! Quos, amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium tempora laboriosam adipisci! Tempore veritatis explicabo iure deleniti aliquam pariatur a, eligendi voluptate, dolor nisi repellat. Provident reiciendis ratione eos?</p>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque maxime eligendi debitis nobis ipsam rem, sunt iure deleniti consequuntur quam quos laboriosam doloribus, odit, iusto vitae impedit. Et, quidem consequatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quasi illum, iure dolor cum voluptatem dignissimos aliquam perspiciatis est, tempore hic! Vitae omnis unde, ipsam commodi rerum suscipit eum. Nostrum?</p>
-                </div>
-                <div class="acerca_de-section-images">
-                    <img src="../assets/image/imagen_nuestrahistoria1.png" alt="Imagen que muestra una foto de todo el equipo de trabajo.">
-                    <img src="../assets/image/imagen_nuestrahistoria2.png" alt="Imagen que muestra las oficinas de la empresa, se ven computadoras y personas trabajando">
-                    <img src="../assets/image/imagen_nuestrahistoria3.png" alt="Imagen que muestra empleados de la empresa charlando entre ellos tomando cafe y sonriendo">
-                </div>
-            </section>
-        </div>
+    <main class="acerca_de">
+        <h2>NUESTRA HISTORIA</h2>
+        <section>
+            <div class="acerca_de-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus non quam ad sit impedit voluptates harum, numquam dolore est quidem, nam iure qui molestias! Molestiae vero sed eum harum earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta itaque eligendi hic vel voluptate adipisci, omnis voluptas possimus unde molestiae sapiente natus, quam rem assumenda? Tenetur ab ipsa molestiae laudantium! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ullam reiciendis veniam aspernatur eius minus aliquam saepe quam tenetur molestias eaque aut, velit mollitia quidem, itaque pariatur libero! Quos, amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium tempora laboriosam adipisci! Tempore veritatis explicabo iure deleniti aliquam pariatur a, eligendi voluptate, dolor nisi repellat. Provident reiciendis ratione eos?</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque maxime eligendi debitis nobis ipsam rem, sunt iure deleniti consequuntur quam quos laboriosam doloribus, odit, iusto vitae impedit. Et, quidem consequatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quasi illum, iure dolor cum voluptatem dignissimos aliquam perspiciatis est, tempore hic! Vitae omnis unde, ipsam commodi rerum suscipit eum. Nostrum?</p>
+            </div>
+            <div class="acerca_de-img">
+                <img src="../assets/image/imagen_nuestrahistoria1.png" alt="Imagen que muestra una foto de todo el equipo de trabajo.">
+                <img src="../assets/image/imagen_nuestrahistoria2.png" alt="Imagen que muestra las oficinas de la empresa, se ven computadoras y personas trabajando">
+            </div>
+        </section>
     </main>
     <footer>
         <p>@Copyright text</p>
-        <div>
-            <a href="#"><img src="../assets/image/logo_x.png" alt="Icono de redireccion a red social X"></a>
-            <a href="#"><img src="../assets/image/logo_instagram.png" alt="Icono de redireccion a red social Instagram"></a>
-            <a href="#"><img src="../assets/image/logo_facebook.png" alt="Icono de redireccion a red social Facebook"></a>
-            <a href="#"><img src="../assets/image/logo_whatsapp.png" alt="Icono de redireccion a red social WhatsApp"></a>
-        </div>
+        <ul>
+            <li><a href="#"><img src="../assets/image/logos/x.png" alt="Icono de redireccion a red social X"></a></li>
+            <li><a href="#"><img src="../assets/image/logos/instagram.png" alt="Icono de redireccion a red social Instagram"></a></li>
+            <li><a href="#"><img src="../assets/image/logos/facebook.png" alt="Icono de redireccion a red social Facebook"></a></li>
+            <li><a href="#"><img src="../assets/image/logos/whatsapp.png" alt="Icono de redireccion a red social WhatsApp"></a></li>
+        </ul>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

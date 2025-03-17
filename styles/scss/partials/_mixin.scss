@@ -42,6 +42,6 @@
 @mixin flexColumnJA ($justify, $aling) {
     display: flex;
     flex-direction: column;
-    justify-self: $justify;
+    justify-content: $justify;
     align-items: $aling;
 }
