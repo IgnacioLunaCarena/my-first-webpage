@@ -354,42 +354,37 @@ header nav div {
   flex-direction: column;
 }
 .contacto section form {
+  width: 100%;
   gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.contacto section form .contacto-description {
+  gap: 1rem;
   display: flex;
   flex-direction: column;
 }
-.contacto section form .contacto-mail {
+.contacto section form .contacto-fill {
+  gap: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.contacto section form .contacto-mail label {
-  width: 100px;
+.contacto section form .contacto-fill input {
+  width: 20rem;
 }
-.contacto section form .contacto-mail input {
-  width: 250px;
+.contacto section form .contacto-fill textarea {
+  height: 10rem;
 }
-.contacto section form .contacto-message {
-  display: flex;
-  flex-direction: row;
-}
-.contacto section form .contacto-message label {
-  width: 100px;
-}
-.contacto section form .contacto-message textarea {
-  width: 250px;
-  height: 100px;
-}
-.contacto section a {
-  width: 250px;
-  padding: 5px;
-  margin-left: 100px;
+.contacto section form .contacto-fill a {
+  text-align: center;
+  padding: 0.5rem;
   border: solid black 1px;
   background-color: #1E1F1F;
-  text-align: center;
 }
-.contacto section a:hover {
-  background-color: #0F0F0F;
+.contacto section form .contacto-fill a:hover {
   text-decoration: none;
+  background-color: #0F0F0F;
 }
 
 footer {
@@ -442,11 +437,12 @@ footer ul {
     justify-content: space-between;
     align-items: end;
     gap: 1rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     padding: 2rem;
+    z-index: 10;
     background-color: #0F0F0F;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }

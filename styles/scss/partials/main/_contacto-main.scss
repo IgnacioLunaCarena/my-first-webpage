@@ -12,39 +12,34 @@
         background-color: $lightColor;
         @include flexColumn;
         form {
+            width: 100%;
             gap: 2rem;
-            @include flexColumn;
-            .contacto-mail {
-                @include flexRow;
-                label {
-                    width: 100px;
-                }
-                input {
-                    width: 250px;
-                }
+            @include flexRowJ (start);
+            .contacto-description {
+                gap: 1rem;
+                @include flexColumn;
             }
-            .contacto-message {
-                @include flexRow;
-                label {
-                    width: 100px;
+            .contacto-fill {
+                gap: 1rem;
+                @include flexColumn;
+                input {
+                    width: 20rem;
                 }
                 textarea {
-                    width: 250px;
-                    height: 100px;
+                    height: 10rem;
+                }
+                a {
+                    text-align: center;
+                    padding: 0.5rem;
+                    border: solid black 1px;
+                    background-color: $mediumColor;
+                }
+                a:hover {
+                    text-decoration: none;
+                    background-color: $darkColor;
                 }
             }
         }
-        a {
-            width: 250px;
-            padding: 5px;
-            margin-left: 100px;
-            border: solid black 1px;
-            background-color: $mediumColor;
-            text-align: center;
-        }
-        a:hover {
-            background-color: $darkColor;
-            text-decoration: none;
-        }
+
     }
 }
