@@ -51,9 +51,41 @@
             visibility: visible;
         }
     }
-
     main {
         width: 100%;
+    }
+    .biblioteca {
+        .grid-conteiner {
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            "aside video video"
+            "aside play play"
+            "aside achiev achiev";
+            .game-play {
+                align-items: center;
+                a {
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .acerca_de {
+        section {
+            @include flexColumn;
+            .acerca_de-text {
+                width: 100%;
+            }
+            .acerca_de-img {
+                width: 100%;
+                @include flexRowJA (space-around, center);
+                img {
+                    width: 100%;
+                    max-width: 150px;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 

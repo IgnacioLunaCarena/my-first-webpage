@@ -7,7 +7,7 @@
     .grid-conteiner {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 400px auto;
+        grid-template-rows: auto auto;
         grid-template-areas: 
         "aside video video video video"
         "aside play play achiev achiev";
@@ -41,22 +41,15 @@
         }
         .game-play {
             grid-area: play;
-            padding: 25px;
-            background-color: #2D2E2E;
+            padding: 1rem;
+            gap: 1rem;
+            background-color: $lightColor;
             border: solid black 1px;
-            display: flex;
-            flex-direction: column;
-            h3 {
-                height: 10%;
-            }
-            p {
-                height: 80%;
-                text-indent: 30px;
-            }
+            @include flexColumnJA (center, start);
             a {
-                height: 10%;
+                width: 100%;
+                padding: 0.5rem;
                 text-align: center;
-                line-height: 40px;
                 background-color: #1E1F1F;
                 border: solid black 1px;
             }
@@ -67,23 +60,18 @@
         }
         .game-achievement {
             grid-area: achiev;
-            padding: 25px;
-            background-color: #2D2E2E;
+            padding: 1rem;
+            gap: 1rem;
+            background-color: $lightColor;
             border: solid black 1px;
-            display: flex;
-            flex-direction: column;
-            h3 {
-                height: 10%;
-            }
+            @include flexColumn;
             div {
-                padding: 20px 0px;
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-                align-items: start;
+                gap: 1rem;
+                @include flexRowJA (start, start);
                 img {
                     width: 60px;
                     height: 60px;
+                    background-color: $fontColor;
                 }
             }
         }
