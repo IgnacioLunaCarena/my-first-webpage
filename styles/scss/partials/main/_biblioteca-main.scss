@@ -1,0 +1,91 @@
+.biblioteca {
+    padding: 2rem;
+    gap: 2rem;
+    h2 {
+        width: 100%;
+    }
+    .grid-conteiner {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 400px auto;
+        grid-template-areas: 
+        "aside video video video video"
+        "aside play play achiev achiev";
+        gap: 1rem;
+        .aside {
+            grid-area: aside;
+            background-color: #2D2E2E;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            ul {
+                width: 70%;
+                li {
+                    padding: 10px 0px;
+                    margin: 5px 0px;
+                    border-bottom: solid black 1px;
+                    text-align: center;
+                }
+            }
+        }
+        .video {
+            grid-area: video;
+            background-color: #2D2E2E;
+            border: solid black 1px;
+            video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .game-play {
+            grid-area: play;
+            padding: 25px;
+            background-color: #2D2E2E;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                height: 10%;
+            }
+            p {
+                height: 80%;
+                text-indent: 30px;
+            }
+            a {
+                height: 10%;
+                text-align: center;
+                line-height: 40px;
+                background-color: #1E1F1F;
+                border: solid black 1px;
+            }
+            a:hover {
+                background-color: #0F0F0F;
+                text-decoration: none;
+            }
+        }
+        .game-achievement {
+            grid-area: achiev;
+            padding: 25px;
+            background-color: #2D2E2E;
+            border: solid black 1px;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                height: 10%;
+            }
+            div {
+                padding: 20px 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: start;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
