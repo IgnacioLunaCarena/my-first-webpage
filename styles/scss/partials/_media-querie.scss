@@ -78,11 +78,23 @@
             }
             .acerca_de-img {
                 width: 100%;
-                @include flexRowJA (space-around, center);
+                @include flexRowJA (center, center);
                 img {
                     width: 100%;
                     max-width: 150px;
-                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .acerca_de {
+        section {
+            .acerca_de-img {
+                img {
+                    width: 100%;
+                    max-width: 100px;
                 }
             }
         }

@@ -131,8 +131,8 @@ header nav div {
   background-color: #2D2E2E;
 }
 .index-gamelist .index-article-conteiner .index-article img {
-  width: 180px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   background-color: #b3b3b3;
 }
 .index-gamelist .index-article-conteiner .index-article h3 {
@@ -218,7 +218,8 @@ header nav div {
 }
 .biblioteca .grid-conteiner .video video {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 .biblioteca .grid-conteiner .game-play {
   grid-area: play;
@@ -230,6 +231,9 @@ header nav div {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+.biblioteca .grid-conteiner .game-play p {
+  text-indent: 2rem;
 }
 .biblioteca .grid-conteiner .game-play a {
   width: 100%;
@@ -259,8 +263,8 @@ header nav div {
   align-items: start;
 }
 .biblioteca .grid-conteiner .game-achievement div img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: auto;
   background-color: #b3b3b3;
 }
 
@@ -278,6 +282,10 @@ header nav div {
   flex-direction: column;
 }
 .comunidad section article {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  gap: 1rem;
   background-color: #2D2E2E;
   border: solid black 1px;
   display: flex;
@@ -285,18 +293,21 @@ header nav div {
   justify-content: space-between;
   align-items: center;
 }
-.comunidad section article div {
-  padding: 0rem 1rem 0rem 0rem;
-  margin: 1rem 0rem 1rem 1rem;
-  border-right: solid black 1px;
+.comunidad section article .foro-name {
+  width: 70%;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
-.comunidad section article span {
-  height: auto;
-  padding: 1rem;
+.comunidad section article .last-update {
+  width: 30%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 }
 
 .acerca_de {
@@ -490,13 +501,18 @@ footer ul {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
   .acerca_de section .acerca_de-img img {
     width: 100%;
     max-width: 150px;
-    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .acerca_de section .acerca_de-img img {
+    width: 100%;
+    max-width: 100px;
   }
 }
 

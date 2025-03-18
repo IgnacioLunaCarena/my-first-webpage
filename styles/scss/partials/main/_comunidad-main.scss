@@ -9,18 +9,22 @@
         gap: 1rem;
         @include flexColumn;
         article {
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+            gap: 1rem;
             background-color: $lightColor;
             border: solid black 1px;
             @include flexRowJA (space-between, center);
-            div {
-                padding: 0rem 1rem 0rem 0rem;
-                margin: 1rem 0rem 1rem 1rem;
-                border-right: solid black 1px;
+            .foro-name {
+                width: 70%;
+                gap: 1rem;
                 @include flexColumnJA (center, start);
             }
-            span {
-                height: auto;
-                padding: 1rem;
+            .last-update {
+                width: 30%;
+                gap: 1rem;
+                @include flexColumnJA (center, end);
             }
         }
     }
