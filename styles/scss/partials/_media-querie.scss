@@ -10,6 +10,8 @@
     }
     header {
         @include flexRowJA (space-between, center);
+        padding-left: 2rem;
+        padding-right: 2rem;
         h1 {
             font-size: 3rem;
         }

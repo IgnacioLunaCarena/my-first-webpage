@@ -4,7 +4,12 @@ footer {
     height: 10vh;
     min-height: 55px;
     @include flexRowJA (space-around, center);
+    p {
+        margin-bottom: 0;
+    }
     ul {
+        padding-left: 0;
+        margin-bottom: 0;
         @include flexRowA (center);
         gap: 1rem;
     }
