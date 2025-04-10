@@ -42,9 +42,13 @@
             ul {
                 @include flexColumnA (end);
             }
-            div {
+            .login-mobile {
                 align-items: end;
+                @include flexColumnJA (space-between, end);
             }
+        }
+        .login-desktop {
+            display: none;
         }
         .visible {
             opacity: 1;

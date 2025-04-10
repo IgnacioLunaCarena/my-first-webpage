@@ -17,8 +17,11 @@ header {
             @include flexRowJA (space-between, center);
             gap: 1rem;
         }
-        div {
-            @include flexColumnJA (center, center);
+        .login-mobile {
+            display: none;
         }
+    }
+    .login-desktop {
+        @include flexColumnJA (center, center);
     }
 }
